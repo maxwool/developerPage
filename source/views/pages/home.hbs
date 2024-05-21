@@ -3,6 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #F5DEB3; /* Light tan */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        .container {
+            background-color: #D3D3D3; /* Grey */
+            margin: 20px auto; /* Center container */
+            padding: 20px;
+            max-width: 1400px; /* Increase max width */
+            box-sizing: border-box;
+            border-radius: 30px;
+        }
+        .content-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .content-container img {
+            height: 300px;
+            width: 500px;
+            object-fit: cover;
+        }
+        .text-container {
+            margin-left: 20px;
+            font-size: 100px;
+            font-weight: bold;
+        }
+        .banner-header {
+            text-align: right;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .banner {
+            background-color: black; /* Black */
+            color: white;
+            padding: 40px;
+            width: 100vw; /* Full width */
+            box-sizing: border-box;
+            position: relative;
+            left: 15%;
+            right: 50%;
+            overflow: hidden;
+            margin-right: -50vw;
+            border-radius: 5px;
+            scroll-margin-top:5px;
+        }
+        .scrollable-text {
+            white-space: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            padding: 0 20px;
+        }
+        .scrollable-text div {
+            display: inline;
+        }
+        .dot-separator::after {
+            content: ' • ';
+        }
+        nav {
+            background-color: #F5DEB3;
+        }
+        .title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 40px 0 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding-left:40px;
+            padding-right:40px;
+        }
+        .skill {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #333; /* Dark background */
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px; /* Increase max width */
+            margin: 40px auto 0; /* Center footer */
+        }
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+        .social-links div {
+            background-color: #555;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
-<body></body>
+<body>
+    <div class="container">
+        <div class="content-container">
+            <img src="../../images/logopls.jpeg" alt="Logo"/>
+            <div class="text-container">
+                Software <br> Development
+            </div>
+        </div>
+        <br>
+        <div class="banner-header">Technical Skills</div>
+        <div class="banner">
+            <div class="scrollable-text">
+                <div class="dot-separator">Welcome to My Professional Portfolio! This is a very long item to ensure scrolling works.</div>
+                <div class="dot-separator">Item 2 with extended description to test scrolling behavior.</div>
+                <div class="dot-separator">Item 3 with some more detailed text to fill space.</div>
+                <div class="dot-separator">Item 4 is also extended with additional text to ensure scrolling.</div>
+                <div class="dot-separator">Item 5 has extra text to make sure the scroll bar appears correctly.</div>
+                <div class="dot-separator">Item 6 with even more text to make sure everything works as expected.</div>
+                <div class="dot-separator">Item 7's description is also quite long to test the horizontal scrolling.</div>
+                <div class="dot-separator">Item 8's detailed text is added here to ensure that the scroll works.</div>
+                <div class="dot-separator">Item 9 with another long text to see the scrolling feature in action.</div>
+                <div>Item 10 with additional text for scrolling test purposes.</div>
+            </div>
+        </div>
+        <br>
+    </div>
+        <div class="title">Skills and Services</div>
+        <div class="skills-grid">
+            <div class="skill">Skill 1</div>
+            <div class="skill">Skill 2</div>
+            <div class="skill">Skill 3</div>
+            <div class="skill">Skill 4</div>
+            <div class="skill">Skill 5</div>
+            <div class="skill">Skill 6</div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <p>more stuff here</p>
+    </div>
+</body>
 </html>

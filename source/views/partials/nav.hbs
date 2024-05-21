@@ -1,5 +1,36 @@
 <header>
-  <nav>
-    
+  <nav style="background-color: #F5DEB3; width: 100%; height: 50px; display: flex; justify-content: left; align-items: center; padding:  15px;">
+    <div style="width: 100%; max-width: 1400px; display: flex; justify-content: space-between; align-items: center; margin-left: 20px;">
+      <div style="display: flex; align-items: center;">
+        <span style="font-size: 16px; font-weight: bold;">Max Davis Wool</span>
+        <span style="font-size: 16px; padding-left: 10px;">Computer Science + Mathematics (BS)</span>
+      </div>
+      <div style="display: flex; align-items: center;">
+        <button style="font-size: 16px; padding: 5px; border: none; background: none; cursor: pointer; transition: all 0.3s;">
+          Home
+        </button>
+        <span style="font-size: 16px; padding: 0 10px;">•</span>
+        <button style="font-size: 16px; padding: 5px; border: none; background: none; cursor: pointer; transition: all 0.3s;">
+          Software I've Engineered
+        </button>
+        <span style="font-size: 16px; padding: 0 10px;">•</span>
+        <button style="font-size: 16px; padding: 5px; border: none; background: none; cursor: pointer; transition: all 0.3s;">
+          Contact/About
+        </button>
+      </div>
+    </div>
   </nav>
+
+  <script>
+    document.querySelectorAll('nav button').forEach(button => {
+      button.addEventListener('mouseover', function() {
+        this.style.fontWeight = 'bold';
+        this.style.textShadow = '2px 2px 2px rgba(0, 0, 0, 0.3)';
+      });
+      button.addEventListener('mouseout', function() {
+        this.style.fontWeight = 'normal';
+        this.style.textShadow = 'none';
+      });
+    });
+  </script>
 </header>

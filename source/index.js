@@ -21,6 +21,7 @@ app.engine('hbs', hbs.engine);
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'source')));
 // set Session
 app.use(
   session({
@@ -42,6 +43,7 @@ app.get('/', (req, res) => {
 });
 app.get('/home', (req, res) => {
   res.render('pages/home');
+ 
 });
 
 // -------------------------------------  START THE SERVER   ----------------------------------------------
